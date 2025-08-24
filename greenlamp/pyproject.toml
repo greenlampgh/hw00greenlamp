@@ -1,0 +1,19 @@
+[project]
+name = "greenlamp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "greenlampgh", email = "greenlampgh@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.maturin]
+module-name = "greenlamp._core"
+python-packages = ["greenlamp"]
+python-source = "src"
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
