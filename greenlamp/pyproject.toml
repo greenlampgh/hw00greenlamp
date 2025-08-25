@@ -1,13 +1,16 @@
 [project]
 name = "greenlamp"
-version = "0.1.0"
+version = "0.1.2"
 description = "Add your description here"
 readme = "README.md"
 authors = [
     { name = "greenlampgh", email = "greenlampgh@gmail.com" }
 ]
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "maturin>=1.9.3",
+    "twine>=6.1.0",
+]
 
 [tool.maturin]
 module-name = "greenlamp._core"

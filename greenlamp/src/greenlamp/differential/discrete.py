@@ -6,9 +6,10 @@ def diff(t_k, x_t): # Parameters must be 2 arrays of equal length
         return
     
     # Return the coputed discrete derivative v_t as a python array
-    v_t = [None] * len(t_k) # could use either array to configure size
+    v_t = [None] * (len(t_k))
+    v_t[0] = 0 # assume first element 0
     for i in range(1, len(t_k)): # Here k must start at 1 (index)
-        v_t[i-1] = (x_t[i] - x_t[i-1])/(t_K[i]-t_k[i-1])
+        v_t[i] = (x_t[i] - x_t[i-1])/(t_k[i]-t_k[i-1])
     
     print(v_t)
     return v_t
